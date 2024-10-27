@@ -1,44 +1,39 @@
 
 const Footer = () => {
   return (
-    <div className="">
-      <footer className="footer bg-neutral text-neutral-content p-10">
-  <nav>
-    <h6 className="footer-title">Services</h6>
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Company</h6>
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title">Legal</h6>
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
-  </nav>
-  <form>
-    <h6 className="footer-title">Newsletter</h6>
-    <fieldset className="form-control w-80">
-      <label className="label">
-        <span className="label-text text-white">Enter your email address</span>
-      </label>
-      <div className="join">
-        <input
-          type="text"
-          placeholder="username@site.com"
-          className="input input-bordered join-item" />
-        <button className="btn btn-primary join-item">Subscribe</button>
-      </div>
-    </fieldset>
-  </form>
-</footer>
+    <div>
+        <footer className="footer bg-neutral text-neutral-content p-10">
+            <nav>
+                <h6 className="footer-title">About Us</h6>
+                <p>We are a passionate team <br /> dedicated to providing the best <br />services to our customers.</p>
+                
+            </nav>
+        <nav>
+            <h6 className="footer-title ">Quick Links</h6>
+            <ol className="flex flex-col space-y-2">
+                <li><a className="link link-hover">Home</a></li>
+                <li><a className="link link-hover">Services</a></li>
+                <li><a className="link link-hover">About</a></li>
+                <li><a className="link link-hover">Contacts</a></li>
+            </ol>
+        </nav>
+        <form>
+            <h6 className="footer-title">Subscribe</h6>
+            <p className="text-gray-400 mb-2">Subscribe to our newsletter for the latest updates.</p>
+            <fieldset className="form-control w-80">
+            <label className="label">
+                <span className="label-text text-white">Enter your email address</span>
+            </label>
+            <div className="join">
+                <input
+                type="text"
+                placeholder="Enter Your Email"
+                className="input input-bordered join-item" />
+                <button className="btn bg- btn-primary join-item">Subscribe</button>
+            </div>
+            </fieldset>
+        </form>
+        </footer> 
     </div>
   )
 }

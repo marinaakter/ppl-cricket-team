@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className='w-11/12 mx-auto'>
+      <div className='container mx-auto mt-5'>
       <Header></Header>
       <Banner></Banner>
       <Main ></Main>
