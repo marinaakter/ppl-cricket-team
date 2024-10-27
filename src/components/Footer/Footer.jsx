@@ -2,7 +2,9 @@
 const Footer = () => {
   return (
     <div>
-        <footer className="footer bg-neutral text-neutral-content p-10">
+        
+        <footer className="footer bg-neutral text-neutral-content p-10 mt-10">
+            
             <nav>
                 <h6 className="footer-title">About Us</h6>
                 <p>We are a passionate team <br /> dedicated to providing the best <br />services to our customers.</p>
@@ -33,7 +35,14 @@ const Footer = () => {
             </div>
             </fieldset>
         </form>
-        </footer> 
+        </footer>
+        <footer className="footer bg-neutral text-white  border-t border-gray-600 px-10 py-4">
+            <div className="footer footer-center bg-neutral text-white p-4">
+                <aside>
+                    <p>Copyright © {new Date().getFullYear()} - Your Company All Rights Reserved</p>
+                </aside>
+            </div>
+        </footer>
     </div>
   )
 }
