@@ -14,7 +14,9 @@ const Banner = () => {
       <img className='' src="/assets/banner-main.png" alt="" />
         <h1 className='font-bold text-white md:text-4xl'>Assemble Your Ultimate Dream 11 Cricket Team</h1>
         <p className='text-white'>Beyond Boundaries Beyond Limits</p>
-        <button className="btn bg-bannerBtn">Claim Free Credit</button>
+        <button className="btn border-none bg-lime-400 text-black font-bold px-6 py-3 rounded-lg shadow-lg">
+      Claim Free Credit
+    </button>
 
       </div>
     </div>

@@ -1,14 +1,16 @@
 
 const PlayerList = () => {
+
+
   return (
     <div>
-        <div className="drawer">
+        <div className="drawer h-96 border border-black">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}
-                <div className="navbar  w-full">
+                <div className="navbar w-full">
                 <div className="flex-none lg:hidden">
-                    <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
+                    <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -24,7 +26,7 @@ const PlayerList = () => {
                 </div>
                 <div className="mx-2 flex-1 px-2">Available Players</div>
                 <div className="hidden flex-none lg:block">
-                    <ul className="menu menu-horizontal">
+                    <ul className="menu menu-horizontal ">
                     {/* Navbar menu content here */}
                     <li><a>Available</a></li>
                     <li><a>Selected</a></li>
