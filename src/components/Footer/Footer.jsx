@@ -1,14 +1,18 @@
 
 const Footer = () => {
   return (
-    <div>
-        
-        <footer className="footer bg-neutral text-neutral-content p-10 mt-10">
+    <div className=" bg-neutral text-neutral-content p-10 mt-10">
+        <div>
             
+        </div>
+        <div className="flex items-center justify-center my-10">
+            <img src="/assets/logo-footer.png" alt="" />
+        </div>
+        <div>
+        <footer className="footer mb-10">
             <nav>
                 <h6 className="footer-title">About Us</h6>
                 <p>We are a passionate team <br /> dedicated to providing the best <br />services to our customers.</p>
-                
             </nav>
         <nav>
             <h6 className="footer-title ">Quick Links</h6>
@@ -20,7 +24,7 @@ const Footer = () => {
             </ol>
         </nav>
         <form>
-            <h6 className="footer-title">Subscribe</h6>
+            <h6 className="footer-title ">Subscribe</h6>
             <p className="text-gray-400 mb-2">Subscribe to our newsletter for the latest updates.</p>
             <fieldset className="form-control w-80">
             <label className="label">
@@ -31,18 +35,20 @@ const Footer = () => {
                 type="text"
                 placeholder="Enter Your Email"
                 className="input input-bordered join-item" />
-                <button className="btn bg- btn-primary join-item">Subscribe</button>
+                <button className="btn bg-primary text-white hover:text-black join-item ">Subscribe</button>
             </div>
             </fieldset>
         </form>
         </footer>
-        <footer className="footer bg-neutral text-white  border-t border-gray-600 px-10 py-4">
+        <footer className="footer bg-neutral text-white  border-t border-gray-600 ">
             <div className="footer footer-center bg-neutral text-white p-4">
                 <aside>
                     <p>Copyright © {new Date().getFullYear()} - Your Company All Rights Reserved</p>
                 </aside>
             </div>
         </footer>
+        </div>
+        
     </div>
   )
 }
