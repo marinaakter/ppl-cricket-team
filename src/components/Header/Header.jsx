@@ -1,5 +1,7 @@
+import PropTypes from 'prop-types';
 import { TbCoinFilled } from "react-icons/tb";
-const Header = () => {
+const Header = ({freeCredit}) => {
+
   return (
         <div className="navbar mb-6">
         <div className="flex-1">
@@ -12,12 +14,21 @@ const Header = () => {
             <li><a>Teams</a></li>
             <li><a>Schedules</a></li>
             <li>
-            <button className="border border-gray-200 px-4 ml-4">0 Coin <TbCoinFilled className="text-2xl text-yellow-600"/> </button>
+            <button  className="border border-gray-200 px-4 ml-4"> 
+              <TbCoinFilled className="text-2xl text-yellow-600"/>
+              <span>{freeCredit} Coin</span>
+            </button>
             </li>
             </ul>
         </div>
         </div>
   )
 }
+
+
+Header.propTypes = {
+  freeCredit: PropTypes.func
+  
+};
 
 export default Header

@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import bgImage from '/assets/bg-shadow.png';
 
 console.log(bgImage); // Check if this logs the correct URL
 
-const Banner = () => {
+const Banner = ({ handleFreeCredit }) => {
   return (
     <div
       className="bg-cover bg-no-repeat rounded-3xl h-auto mb-10"
@@ -14,7 +15,7 @@ const Banner = () => {
       <img className='' src="/assets/banner-main.png" alt="" />
         <h1 className='font-bold text-white md:text-4xl'>Assemble Your Ultimate Dream 11 Cricket Team</h1>
         <p className='text-white'>Beyond Boundaries Beyond Limits</p>
-        <button className="btn border-none bg-lime-400 text-black font-bold px-6 py-3 rounded-lg shadow-lg">
+        <button onClick={handleFreeCredit} className="btn border-none bg-lime-400 text-black font-bold px-6 py-3 rounded-lg shadow-lg">
       Claim Free Credit
     </button>
 
@@ -22,5 +23,11 @@ const Banner = () => {
     </div>
   );
 }
+
+Banner.propTypes = {
+  handleFreeCredit: PropTypes.func
+  
+};
+
 
 export default Banner;

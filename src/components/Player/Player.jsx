@@ -3,12 +3,13 @@ import { CgProfile } from "react-icons/cg";
 import { FaFlag } from "react-icons/fa6";
 const Player = ({player}) => {
     const {name,image,country,role, battingType, biddingPrice} = player
+    
   return (
     <div className="card bg-base-100 shadow-xl border">
     <figure className="px-10 pt-10">
         <img
         src={image}
-        alt="Shoes"
+        alt=""
         className="rounded-xl" />
     </figure>
     <div className="card-body">
@@ -34,7 +35,7 @@ const Player = ({player}) => {
         <button className="btn">Choose Player</button>
         </div>
     </div>
-</div>
+    </div>
   )
 }
 

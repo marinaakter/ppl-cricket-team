@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import Player from "../Player/Player"
-
 const PlayerList = () => {
     const [playerList, setPlayerList] = useState([])
     useEffect(()=>{
