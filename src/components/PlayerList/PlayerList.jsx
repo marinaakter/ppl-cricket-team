@@ -1,10 +1,17 @@
+import { useEffect, useState } from "react"
+import Player from "../Player/Player"
 
 const PlayerList = () => {
-
+    const [playerList, setPlayerList] = useState([])
+    useEffect(()=>{
+        fetch('data.json')
+        .then(res => res.json())
+        .then(data => setPlayerList(data))
+    },[])
 
   return (
     <div>
-        <div className="drawer h-96 border border-black">
+        <div className="drawer">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}
@@ -24,7 +31,7 @@ const PlayerList = () => {
                     </svg>
                     </label>
                 </div>
-                <div className="mx-2 flex-1 px-2">Available Players</div>
+                <div className="flex-1">Available Players: {playerList.length}</div>
                 <div className="hidden flex-none lg:block">
                     <ul className="menu menu-horizontal ">
                     {/* Navbar menu content here */}
@@ -34,7 +41,15 @@ const PlayerList = () => {
                 </div>
                 </div>
                 {/* Page content here */}
-                Marina
+                <div className="grid grid-cols-3 gap-3">
+                {
+                    playerList.map(player => <Player
+                    key={player.id}
+                    player={player}
+                    ></Player>)
+                }
+                </div>
+
             </div>
             <div className="drawer-side">
                 <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>

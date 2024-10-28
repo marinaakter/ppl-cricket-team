@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <div className="relative bg-neutral text-neutral-content p-10 mt-10">
+    <div className="relative bg-neutral text-neutral-content p-10 mt-[10rem]">
         <div className="absolute -top-32 left-64 w-2/3 flex justify-center items-center bg-gradient-to-r from-blue-100 to-yellow-100 py-16 rounded-lg shadow-md">
             <div className="text-center">
                 <h2 className="text-2xl text-black font-semibold mb-2">Subscribe to our Newsletter</h2>
