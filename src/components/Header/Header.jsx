@@ -1,7 +1,7 @@
 import { TbCoinFilled } from "react-icons/tb";
 const Header = () => {
   return (
-    <div className="navbar">
+        <div className="navbar">
         <div className="flex-1">
             <img src="/assets/logo.png" alt="" />
         </div>
@@ -16,7 +16,7 @@ const Header = () => {
             </li>
             </ul>
         </div>
-    </div>
+        </div>
   )
 }
 
