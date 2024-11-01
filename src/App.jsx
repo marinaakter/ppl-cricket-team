@@ -27,6 +27,7 @@ function App() {
     else{
       const newPlayers=[...selectedPlayers, myPlayer]
       setSelectedPlayers(newPlayers);
+      
       toast.success(`${myPlayer.name} has been added`);
     }
   }

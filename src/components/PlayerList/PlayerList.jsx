@@ -34,7 +34,10 @@ const PlayerList = ({ selectedPlayers, handleSelectedPlayer, showSelectedPlayers
         </div>
       </div>
       {showSelectedPlayers ? (
-        <ShowSelectedPlayers handleRemovePlayer={handleRemovePlayer} selectedPlayers={selectedPlayers} />
+        <ShowSelectedPlayers 
+        handleRemovePlayer={handleRemovePlayer} 
+        selectedPlayers={selectedPlayers}
+        setShowSelectedPlayers={setShowSelectedPlayers} />
       ) : (
         <div className="grid grid-cols-3 gap-3">
           {playerList.map(player => (

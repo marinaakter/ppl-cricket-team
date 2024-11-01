@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FaTrash } from "react-icons/fa";
 
 
-const ShowSelectedPlayers = ({ selectedPlayers, handleRemovePlayer }) => {
+const ShowSelectedPlayers = ({ selectedPlayers, handleRemovePlayer, setShowSelectedPlayers }) => {
   return (
     <div className="mt-5">
       <h2 className="text-lg font-bold mb-3">Selected Players ({selectedPlayers.length})</h2>
@@ -29,6 +29,7 @@ const ShowSelectedPlayers = ({ selectedPlayers, handleRemovePlayer }) => {
         ))}
       </div>
       <button 
+      onClick={()=>setShowSelectedPlayers(false)}
       className='btn bg-lime-400 mt-10'> Add More Player</button>
     </div>
   );
@@ -37,6 +38,7 @@ const ShowSelectedPlayers = ({ selectedPlayers, handleRemovePlayer }) => {
 ShowSelectedPlayers.propTypes = {
   selectedPlayers: PropTypes.array.isRequired,
   handleRemovePlayer: PropTypes.func.isRequired,
+  setShowSelectedPlayers:PropTypes.func.isRequired
 };
 
 export default ShowSelectedPlayers;
