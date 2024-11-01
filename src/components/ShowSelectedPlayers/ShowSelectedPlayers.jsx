@@ -1,48 +1,38 @@
 import PropTypes from 'prop-types';
-import { CgProfile } from "react-icons/cg";
-import { FaFlag } from "react-icons/fa6";
+import { FaTrash } from "react-icons/fa";
 
-const ShowSelectedPlayers = ({ selectedPlayers }) => {
+const ShowSelectedPlayers = ({ selectedPlayers, handleRemovePlayer }) => {
   return (
-    <div className="grid grid-cols-3 gap-3">
-      {selectedPlayers.map(player => (
-        <div key={player.id} className="card bg-base-100 shadow-xl border">
-          <figure className="px-10 pt-10">
-            <img
-              src={player.image}
-              alt={player.name}
-              className="rounded-xl"
+    <div className="mt-5">
+      <h2 className="text-lg font-bold mb-3">Selected Players ({selectedPlayers.length})</h2>
+      <div className="grid grid-cols-1 gap-4">
+        {selectedPlayers.map(player => (
+          <div key={player.id} className="flex items-center bg-gray-100 p-4 rounded-lg shadow-md">
+            <img 
+              src={player.image} 
+              alt={player.name} 
+              className="w-16 h-16 rounded-full  mr-4" 
             />
-          </figure>
-          <div className="card-body">
-            <div className='flex items-center gap-2'>
-              <CgProfile className='text-2xl' />
-              <h2 className="card-title">{player.name}</h2>
+            <div className="flex-1">
+              <h3 className="font-semibold text-md">{player.name}</h3>
+              <p className="text-sm text-gray-600">{player.battingType}</p>
             </div>
-            <div className='flex items-center justify-between'>
-              <div className='flex items-center gap-3'>
-                <FaFlag />
-                <small>{player.country}</small>
-              </div>
-              <div>
-                <button className='btn'>{player.role}</button>
-              </div>
-            </div>
-            <hr />
-            <p className='font-bold'>Ratings</p>
-            <p>Batting-Type: {player.battingType}</p>
-            <div className="card-actions flex items-center my-3">
-              <p>Price: ${player.biddingPrice}</p>
-            </div>
+            <button 
+              onClick={() => handleRemovePlayer(player.id)} 
+              className="text-red-500"
+            >
+              <FaTrash size={20} />
+            </button>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
 
 ShowSelectedPlayers.propTypes = {
   selectedPlayers: PropTypes.array.isRequired,
+  handleRemovePlayer: PropTypes.func.isRequired,
 };
 
 export default ShowSelectedPlayers;

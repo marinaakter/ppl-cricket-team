@@ -25,9 +25,9 @@ const PlayerList = ({ selectedPlayers, handleSelectedPlayer, showSelectedPlayers
         <div>Available Players: {playerList.length}</div>
         <div className="flex gap-5">
           <div onClick={toggleShowAvailable} 
-            className={`btn ${!showSelectedPlayers ? 'btn-primary' : ''}`}>Available</div>
+            className={`btn ${!showSelectedPlayers ? 'bg-lime-400' : ''}`}>Available</div>
           <div onClick={toggleShowSelected} 
-            className={`btn ${showSelectedPlayers ? 'btn-primary' : ''}`}>
+            className={`btn ${showSelectedPlayers ? 'bg-lime-400' : ''}`}>
             Selected {selectedPlayers.length}
           </div>
         </div>
