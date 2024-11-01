@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { CgProfile } from "react-icons/cg";
 import { FaFlag } from "react-icons/fa6";
-const Player = ({player}) => {
+const Player = ({player, handleSelectedPlayer}) => {
     const {name,image,country,role, battingType, biddingPrice} = player
     
   return (
@@ -32,7 +32,7 @@ const Player = ({player}) => {
         <p> Batting-Type: {battingType}</p>
         <div className="card-actions flex items-center my-3">
         <p>Price: ${biddingPrice} </p>
-        <button className="btn">Choose Player</button>
+        <button onClick={()=>handleSelectedPlayer(player)} className="btn">Choose Player</button>
         </div>
     </div>
     </div>
@@ -41,14 +41,16 @@ const Player = ({player}) => {
 
 Player.propTypes = {
     player: PropTypes.shape({
-        name:PropTypes.string.isRequired ,
-        image: PropTypes.string.isRequired,
-        country: PropTypes.string.isRequired,
-        role: PropTypes.string.isRequired,
-        battingType: PropTypes.string.isRequired,
-        bowlingType: PropTypes.string.isRequired,
-        biddingPrice: PropTypes.string.isRequired,
-    })
+    id: PropTypes.number.isRequired, 
+    name:PropTypes.string.isRequired ,
+    image: PropTypes.string.isRequired,
+    country: PropTypes.string.isRequired,
+    role: PropTypes.string.isRequired,
+    battingType: PropTypes.string.isRequired,
+    bowlingType: PropTypes.string.isRequired,
+    biddingPrice: PropTypes.string.isRequired,
+    }),
+    handleSelectedPlayer:PropTypes.func
   };
   
 

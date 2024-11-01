@@ -1,6 +1,6 @@
 [
     {
-        "playerId": 1,
+        "id": 1,
         "name": "Virat Kohli",
         "country": "India",
         "image": "https://i.ibb.co.com/HhcLq4y/Virat.webp",
@@ -10,7 +10,7 @@
         "biddingPrice": "2,000,000 USD"
     },
     {
-        "playerId": 2,
+        "id": 2,
         "name": "Kane Williamson",
         "country": "New Zealand",
         "image": "https://i.ibb.co.com/6tDd84f/Kane.webp",
@@ -20,7 +20,7 @@
         "biddingPrice": "1,500,000 USD"
     },
     {
-        "playerId": 3,
+        "id": 3,
         "name": "Jasprit Bumrah",
         "country": "India",
         "image": "https://i.ibb.co.com/0JnWLZp/Bumrah.webp",
@@ -30,7 +30,7 @@
         "biddingPrice": "1,800,000 USD"
     },
     {
-        "playerId": 4,
+        "id": 4,
         "name": "Ben Stokes",
         "country": "England",
         "image": "https://i.ibb.co.com/z2vMxY5/Ben.png",
@@ -40,7 +40,7 @@
         "biddingPrice": "2,500,000 USD"
     },
     {
-        "playerId": 5,
+        "id": 5,
         "name": "Babar Azam",
         "country": "Pakistan",
         "image": "https://i.ibb.co.com/GHy7mz7/babarazam.png",
@@ -50,7 +50,7 @@
         "biddingPrice": "1,600,000 USD"
     },
     {
-        "playerId": 6,
+        "id": 6,
         "name": "Pat Cummins",
         "country": "Australia",
         "image": "https://i.ibb.co.com/pdVLymK/pat.webp",
@@ -60,7 +60,7 @@
         "biddingPrice": "1,700,000 USD"
     },
     {
-        "playerId": 7,
+        "id": 7,
         "name": "Jos Buttler",
         "country": "England",
         "image": "https://i.ibb.co.com/VxDBm20/jos-Batller.png",
@@ -70,7 +70,7 @@
         "biddingPrice": "1,400,000 USD"
     },
     {
-        "playerId": 8,
+        "id": 8,
         "name": "Trent Boult",
         "country": "New Zealand",
         "image": "https://i.ibb.co.com/fCLmMf1/Trent.webp",
@@ -80,7 +80,7 @@
         "biddingPrice": "1,300,000 USD"
     },
     {
-        "playerId": 9,
+        "id": 9,
         "name": "Shakib Al Hasan",
         "country": "Bangladesh",
         "image": "https://i.ibb.co.com/7JYbxQn/sakib.png",
@@ -90,7 +90,7 @@
         "biddingPrice": "1,500,000 USD"
     },
     {
-        "playerId": 10,
+        "id": 10,
         "name": "Quinton de Kock",
         "country": "South Africa",
         "image": "https://i.ibb.co.com/XFqfm1x/Quinton.webp",
@@ -100,7 +100,7 @@
         "biddingPrice": "1,300,000 USD"
     },
     {
-        "playerId": 11,
+        "id": 11,
         "name": "Rashid Khan",
         "country": "Afghanistan",
         "image": "https://i.ibb.co.com/w07Zj3c/Rashid.webp",
@@ -110,7 +110,7 @@
         "biddingPrice": "1,600,000 USD"
     },
     {
-        "playerId": 12,
+        "id": 12,
         "name": "Steve Smith",
         "country": "Australia",
         "image": "https://i.ibb.co.com/6mtWmr7/Steve.png",
@@ -120,7 +120,7 @@
         "biddingPrice": "1,800,000 USD"
     },
     {
-        "playerId": 13,
+        "id": 13,
         "name": "David Warner",
         "country": "Australia",
         "image": "https://i.ibb.co.com/F72NNm6/David.webp",
@@ -130,7 +130,7 @@
         "biddingPrice": "1,900,000 USD"
     },
     {
-        "playerId": 14,
+        "id": 14,
         "name": "Kieron Pollard",
         "country": "West Indies",
         "image": "https://i.ibb.co.com/mXxzR8H/Kieron.png",
@@ -140,7 +140,7 @@
         "biddingPrice": "1,200,000 USD"
     },
     {
-        "playerId": 15,
+        "id": 15,
         "name": "Moeen Ali",
         "country": "England",
         "image": "https://i.ibb.co.com/JFx99hm/moyeen-ali.webp",
