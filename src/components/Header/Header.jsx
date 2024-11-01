@@ -5,7 +5,7 @@ const Header = ({freeCredit}) => {
   return (
         <div className="navbar bg-base-100 bg-opacity-50 backdrop-blur-md mb-6 sticky top-0 z-50">
         <div className="flex-1">
-            <img src="/assets/logo.png" alt="" />
+            <img src="./assets/logo.png" alt="" />
         </div>
         <div className="flex-none">
             <ul className="menu menu-horizontal px-4">

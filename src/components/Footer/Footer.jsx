@@ -19,7 +19,7 @@ const Footer = () => {
             </div>
         </div>
         <div className="flex items-center justify-center my-28">
-            <img src="/assets/logo-footer.png" alt="" />
+            <img src="./assets/logo-footer.png" alt="" />
         </div>
         <div>
             <footer className="footer mb-10">
