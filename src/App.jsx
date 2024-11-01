@@ -8,9 +8,17 @@ import PlayerList from './components/PlayerList/PlayerList'
 function App() {
   const [freeCredit, setFreeCredit] = useState(0);
 
+  const [selectedPlayers, setSelectedPlayers] = useState([])
+
+
   const handleFreeCredit = () => {
       setFreeCredit(freeCredit + 6000000);
   };
+
+  const handleSelectedPlayer =(myPlayer) =>{
+    console.log(player);
+    
+  }
 
 
   return (
