@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   
-  const [freeCredit, setFreeCredit] = useState(0);
+  const [freeCredit, setFreeCredit] = useState(400000);
   const [selectedPlayers, setSelectedPlayers] = useState([])
   const [showSelectedPlayers, setShowSelectedPlayers] = useState(false);
 
@@ -27,13 +27,13 @@ function App() {
     else{
       const newPlayers=[...selectedPlayers, myPlayer]
       setSelectedPlayers(newPlayers);
-      toast.success(`${myPlayer.name} has been added to your selection!`);
+      toast.success(`${myPlayer.name} has been added`);
     }
   }
 
   const handleRemovePlayer = (id) => {
     setSelectedPlayers(selectedPlayers.filter(p => p.id !== id));
-    toast.info("Player removed from selection.");
+    toast.info("Remove this Player");
   };
   
   return (

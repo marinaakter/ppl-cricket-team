@@ -27,7 +27,7 @@ const Header = ({freeCredit}) => {
 
 
 Header.propTypes = {
-  freeCredit: PropTypes.func
+  freeCredit: PropTypes.number
   
 };
 

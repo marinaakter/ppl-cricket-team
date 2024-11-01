@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import bgImage from '/assets/bg-shadow.png';
 
-console.log(bgImage); // Check if this logs the correct URL
-
 const Banner = ({ handleFreeCredit }) => {
   return (
     <div

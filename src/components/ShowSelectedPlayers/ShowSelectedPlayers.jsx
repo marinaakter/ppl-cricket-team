@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { FaTrash } from "react-icons/fa";
 
+
 const ShowSelectedPlayers = ({ selectedPlayers, handleRemovePlayer }) => {
   return (
     <div className="mt-5">
@@ -24,8 +25,11 @@ const ShowSelectedPlayers = ({ selectedPlayers, handleRemovePlayer }) => {
               <FaTrash size={20} />
             </button>
           </div>
+          
         ))}
       </div>
+      <button 
+      className='btn bg-lime-400 mt-10'> Add More Player</button>
     </div>
   );
 };
