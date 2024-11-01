@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   
-  const [freeCredit, setFreeCredit] = useState(400000);
+  const [freeCredit, setFreeCredit] = useState(0);
   const [selectedPlayers, setSelectedPlayers] = useState([])
   const [showSelectedPlayers, setShowSelectedPlayers] = useState(false);
 

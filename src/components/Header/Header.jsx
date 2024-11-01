@@ -3,7 +3,7 @@ import { TbCoinFilled } from "react-icons/tb";
 const Header = ({freeCredit}) => {
 
   return (
-        <div className="navbar mb-6">
+        <div className="navbar bg-base-100 bg-opacity-50 backdrop-blur-md mb-6 sticky top-0 z-50">
         <div className="flex-1">
             <img src="/assets/logo.png" alt="" />
         </div>
@@ -27,7 +27,7 @@ const Header = ({freeCredit}) => {
 
 
 Header.propTypes = {
-  freeCredit: PropTypes.number
+  freeCredit: PropTypes.number.isRequired
   
 };
 
