@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import bgImage from '/assets/bg-shadow.png';
 
+
+
 const Banner = ({ handleFreeCredit }) => {
   return (
     <div
