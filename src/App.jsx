@@ -29,8 +29,12 @@ function App() {
       setSelectedPlayers(newPlayers);
       toast.success(`${myPlayer.name} has been added to your selection!`);
     }
-  }  
-  console.log(selectedPlayers);
+  }
+
+  const handleRemovePlayer = (id) => {
+    setSelectedPlayers(selectedPlayers.filter(p => p.id !== id));
+    toast.info("Player removed from selection.");
+  };
   
   return (
     <>
@@ -42,6 +46,7 @@ function App() {
         handleSelectedPlayer={handleSelectedPlayer}
         showSelectedPlayers={showSelectedPlayers}
         setShowSelectedPlayers={setShowSelectedPlayers}
+        handleRemovePlayer={handleRemovePlayer}
         ></PlayerList>
       </div>
       <Footer></Footer>

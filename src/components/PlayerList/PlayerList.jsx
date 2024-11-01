@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react';
 import Player from '../Player/Player';
 import ShowSelectedPlayers from '../ShowSelectedPlayers/ShowSelectedPlayers';
 
-const PlayerList = ({ selectedPlayers, handleSelectedPlayer, showSelectedPlayers, setShowSelectedPlayers }) => {
+const PlayerList = ({ selectedPlayers, handleSelectedPlayer, showSelectedPlayers, 
+  setShowSelectedPlayers , handleRemovePlayer}) => {
   const [playerList, setPlayerList] = useState([]);
 
   useEffect(() => {
@@ -12,11 +13,11 @@ const PlayerList = ({ selectedPlayers, handleSelectedPlayer, showSelectedPlayers
       .then(data => setPlayerList(data));
   }, []);
   const toggleShowSelected = () => {
-    setShowSelectedPlayers(true); // Set to true to show selected players
+    setShowSelectedPlayers(true); 
   };
 
   const toggleShowAvailable = () => {
-    setShowSelectedPlayers(false); // Set to false to show available players
+    setShowSelectedPlayers(false);
   };
 
   return (
@@ -33,7 +34,7 @@ const PlayerList = ({ selectedPlayers, handleSelectedPlayer, showSelectedPlayers
         </div>
       </div>
       {showSelectedPlayers ? (
-        <ShowSelectedPlayers selectedPlayers={selectedPlayers} />
+        <ShowSelectedPlayers handleRemovePlayer={handleRemovePlayer} selectedPlayers={selectedPlayers} />
       ) : (
         <div className="grid grid-cols-3 gap-3">
           {playerList.map(player => (
@@ -55,6 +56,7 @@ PlayerList.propTypes = {
   selectedPlayers: PropTypes.array,
   showSelectedPlayers: PropTypes.bool, 
   setShowSelectedPlayers: PropTypes.func,
+  handleRemovePlayer: PropTypes. func
 };
 
 export default PlayerList;
