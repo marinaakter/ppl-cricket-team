@@ -6,11 +6,11 @@ The Player Selection App is an interactive application designed to help users se
 
 
 ### Technology Used:
-1. React
-2. React Taostify
-3. PropTypes
-4. React Icons
-5. Javascript ES6
+- React
+- React Taostify
+- PropTypes
+- React Icons
+- Javascript ES6
 
 ### 3 Key Features:
 1. Player Selection and Management: Users can browse through a list of players, add them to a selected list, and remove players from the list as needed.
