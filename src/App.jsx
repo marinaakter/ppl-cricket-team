@@ -33,7 +33,7 @@ function App() {
 
   const handleRemovePlayer = (id) => {
     setSelectedPlayers(selectedPlayers.filter(p => p.id !== id));
-    toast.info("Remove this Player");
+    toast.info("Removed this Player");
   };
   
   return (
