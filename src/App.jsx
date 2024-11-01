@@ -11,8 +11,8 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
   
   const [freeCredit, setFreeCredit] = useState(0);
-
   const [selectedPlayers, setSelectedPlayers] = useState([])
+  const [showSelectedPlayers, setShowSelectedPlayers] = useState(false);
 
 
   const handleFreeCredit = () => {
@@ -37,7 +37,12 @@ function App() {
       <div className='container mx-auto mt-5'>
         <Header freeCredit={freeCredit}></Header>
         <Banner handleFreeCredit={handleFreeCredit}></Banner>
-        <PlayerList selectedPlayers={selectedPlayers} handleSelectedPlayer={handleSelectedPlayer}></PlayerList>
+        <PlayerList 
+        selectedPlayers={selectedPlayers} 
+        handleSelectedPlayer={handleSelectedPlayer}
+        showSelectedPlayers={showSelectedPlayers}
+        setShowSelectedPlayers={setShowSelectedPlayers}
+        ></PlayerList>
       </div>
       <Footer></Footer>
       <ToastContainer /> 
